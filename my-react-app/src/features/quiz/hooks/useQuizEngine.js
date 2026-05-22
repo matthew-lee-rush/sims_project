@@ -14,7 +14,7 @@ const initialState = {
 function quizReducer(state, action) {
   switch (action.type) {
     case "START_QUIZ":
-      const shuffledQuestions = shuffleArray(questionsData).slice(0, 5);
+      const shuffledQuestions = shuffleArray(questionsData);
       return {
         ...state,
         screen: "question",
@@ -44,6 +44,9 @@ function quizReducer(state, action) {
 
     case "GO_HOME":
         return initialState;
+
+     case "GO_INFO":
+        return { ...state, screen: "info" };
 
     default:
         return state;

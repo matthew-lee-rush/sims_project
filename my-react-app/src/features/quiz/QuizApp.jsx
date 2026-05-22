@@ -1,7 +1,6 @@
 import useQuizEngine from "./hooks/useQuizEngine";
 import Landing from "./screens/Landing";
 import Info from "./screens/Info";
-import Portal from "./screens/Portal";
 import Loading from "./screens/Loading";
 import Error from "./screens/Error";
 import Question from "./screens/Question";
@@ -15,10 +14,7 @@ function QuizApp() {
       return <Landing dispatch={dispatch} />;
 
     case "info":
-      return <Info dispatch={dispatch} />;
-
-    case "portal":
-      return <Portal dispatch={dispatch} />;
+      return <Info state={state} dispatch={dispatch} />;
 
     case "loading":
       return <Loading />;
