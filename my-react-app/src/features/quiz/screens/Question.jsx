@@ -1,5 +1,6 @@
 import QuestionCard from "../components/QuestionCard";
 import AnswerButton from "../components/AnswerButton.jsx";
+import ExitButton from "../components/ExitButton";
 
 function Question({ state, dispatch }) {
   const q = state.questions[state.currentIndex];
@@ -17,6 +18,7 @@ function Question({ state, dispatch }) {
           }
         />
       ))}
+      <ExitButton onClick={() => dispatch({ type: "GO_HOME" })} />
     </div>
   );
 }
