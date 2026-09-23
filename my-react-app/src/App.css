@@ -228,3 +228,17 @@ button.button {
 .exit-button-wrap {
   margin-top: 8px;
 }
+
+.question-text {
+  color: rgb(45, 107, 16);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.results-display {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(45, 107, 16);
+  margin-bottom: 16px;
+}
