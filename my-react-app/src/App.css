@@ -182,3 +182,22 @@
     border-right-color: var(--border);
   }
 }
+
+.h2 {
+  
+}
+
+.landing-actions{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.button {
+  background-color: white;
+  color: rgb(45, 107, 16);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  filter: drop-shadow(10px 10px rgb(45, 107, 16));
+}

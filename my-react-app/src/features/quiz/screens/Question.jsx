@@ -3,7 +3,18 @@ import AnswerButton from "../components/AnswerButton.jsx";
 import ExitButton from "../components/ExitButton";
 
 function Question({ state, dispatch }) {
-  const q = state.questions[state.currentIndex];
+   const q = state.questions[state.currentIndex];
+
+   const handleAnswer = (answer) => {
+    // prevent multiple answers
+    if (state.selectedAnswer) return;
+
+    dispatch({ type: "ANSWER", payload: answer });
+  };
+
+  const handleNext = () => {
+    dispatch({ type: "NEXT_QUESTION" });
+  };
 
   return (
     <div>
@@ -13,12 +24,21 @@ function Question({ state, dispatch }) {
         <AnswerButton
           key={a}
           answer={a}
-          onClick={() =>
-            dispatch({ type: "ANSWER", payload: a })
-          }
+          onClick={() => handleAnswer(a)}
+          disabled={!!state.selectedAnswer}
         />
       ))}
-      <ExitButton onClick={() => dispatch({ type: "GO_HOME" })} />
+
+      {/* Show Next button ONLY after answering */}
+      {state.selectedAnswer && (
+        <button onClick={handleNext}>
+          Next Question
+        </button>
+      )}
+
+      <ExitButton
+        onClick={() => dispatch({ type: "GO_HOME" })}
+      />
     </div>
   );
 }

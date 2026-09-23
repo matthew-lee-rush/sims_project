@@ -1,5 +1,7 @@
-function AnswerButton({ answer, onClick }) {
-  return <button onClick={onClick}>{answer}</button>;
+function AnswerButton({ answer, onClick, disabled }) {
+  return <button onClick={onClick} disabled={disabled}>
+    {answer}
+  </button>;
 }
 
 export default AnswerButton;
