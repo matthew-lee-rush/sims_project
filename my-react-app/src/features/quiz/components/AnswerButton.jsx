@@ -1,5 +1,5 @@
 function AnswerButton({ answer, onClick, disabled }) {
-  return <button onClick={onClick} disabled={disabled}>
+  return <button className="button" onClick={onClick} disabled={disabled}>
     {answer}
   </button>;
 }

@@ -17,9 +17,10 @@ function Question({ state, dispatch }) {
   };
 
   return (
-    <div>
+    <div className="question-screen">
       <QuestionCard question={q.question} />
 
+      <div className = "answer-options">
       {q.answers.map((a) => (
         <AnswerButton
           key={a}
@@ -28,10 +29,11 @@ function Question({ state, dispatch }) {
           disabled={!!state.selectedAnswer}
         />
       ))}
+      </div>
 
       {/* Show Next button ONLY after answering */}
       {state.selectedAnswer && (
-        <button onClick={handleNext}>
+        <button className="exit-button-wrap" onClick={handleNext}>
           Next Question
         </button>
       )}

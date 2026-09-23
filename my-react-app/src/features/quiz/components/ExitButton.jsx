@@ -1,6 +1,6 @@
 function ExitButton({ onClick }) {
   return (
-    <button onClick={onClick}>
+    <button className="button" onClick={onClick}>
       Exit Quiz
     </button>
   );

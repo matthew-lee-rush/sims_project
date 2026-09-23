@@ -26,7 +26,7 @@ function Info({ state, dispatch }) {
         <h2>What will the quiz look like?</h2>
         <p>The quiz will contain either true/false or multiple choice questions, so you can always guess if you don’t know!</p>
 
-        <button onClick={() => dispatch({ type: "GO_HOME" })}>
+        <button className = "button" onClick={() => dispatch({ type: "GO_HOME" })}>
                 Go Home
         </button>
 
