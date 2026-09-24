@@ -18,7 +18,7 @@ function Question({ state, dispatch }) {
 
   return (
     <div className="question-screen">
-      <QuestionCard question={q.question} />
+      <QuestionCard question={q} />
 
       <div className = "answer-options">
       {q.answers.map((a) => (

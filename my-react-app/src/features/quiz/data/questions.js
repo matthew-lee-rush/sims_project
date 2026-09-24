@@ -1,3 +1,9 @@
+import bellaGothImage from '../../../assets/images/question-images/bellaGothPFP.webp';
+import getFamousImage from '../../../assets/images/question-images/getFamous.webp';
+import johnnyZestImage from'../../../assets/images/question-images/johnnyZestPFP.webp';
+import oasisSpringsParkImage from '../../../assets/images/question-images/Oasis_springs_map.webp';
+import servoImage from'../../../assets/images/question-images/servo.webp';
+import plumbobImage from'../../../assets/images/question-images/simsPlumbob.png';
 
 const questions = [
     {
@@ -31,6 +37,7 @@ const questions = [
     {
         id: 5,
         question: "What's the name of this sim?",
+        image: bellaGothImage,
         answers: ["Bella Goth", "Nancy Langraab", "Dina Caliente", "Lara Landgraab"],
         correct: "Bella Goth",
     },
@@ -38,6 +45,7 @@ const questions = [
     {
         id: 6,
         question: "What is the object called that appears above a Sim's head?",
+        image: plumbobImage,
         answers: ["Plumbob", "Simoleon", "Whisperer", "Moodlet"],
         correct: "Plumbob",
     },  
@@ -45,6 +53,7 @@ const questions = [
     {
         id: 7,
         question: "What is the name of the park in Oasis Springs?",
+        image: oasisSpringsParkImage,
         answers: ["Sunset Park", "Oasis Springs Park", "Spring Park", "Desert Bloom Park"],
         correct: "Desert Bloom Park",
     },
@@ -52,6 +61,7 @@ const questions = [
     {
         id: 8,
         question: "Which family is Johnny Zest secretly a part of?",
+        image: johnnyZestImage,
         answers: ["Landgraab", "Caliente", "Goth", "Pleasant"],
         correct: "Landgraab",
     },
@@ -59,6 +69,7 @@ const questions = [
     {
         id: 9,
         question: "Which real-life city is the world of Del Sol Valley inspired by?",
+        image: getFamousImage,
         answers: ["Los Angeles", "Miami", "New York", "San Francisco"],
         correct: "Los Angeles",
     },
@@ -66,6 +77,7 @@ const questions = [
     {
         id: 10,
         question: " What are the robots called from Discover University? ",
+        image: servoImage,
         answers: ["RoboSims", "SimBots", "Servos", "Plumbos"],
         correct: "Servos",
     }

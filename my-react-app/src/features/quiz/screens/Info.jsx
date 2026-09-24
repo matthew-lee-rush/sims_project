@@ -21,20 +21,40 @@ function Info({ state, dispatch }) {
         <div className="info-column">
           <h2>How do you get my results?</h2>
           <p className="info-text">
-            Your results will be displayed as a percentage once you've completed the
-            quiz!
+           Your results will be displayed as a percentage once you've completed the quiz! As there are only 10 questions, it's a pretty easily calculation.
+          </p>
+          <p className="info-text">
+           **For future release, I'd like to assign a grade to each percent group**
+          </p>
+          <p className="info-text">
+           This will be a very early release of this quiz, so keep out for new features in the future!
           </p>
 
           <h2>How do I take the quiz?</h2>
-          <p className="info-text">
-            By clicking the "Take The Quiz!" button, you'll be taken to the quiz to
-            begin!
-          </p>
+            <p className="info-text">
+              That's easy! All I ask is that you read through this section first, just so that you understand both how to take the quiz, and how your results are calculated.
+            </p>
+            <p className="info-text">
+              By clicking the "Start Quiz" button, you'll be taken to the quiz to begin!
+            </p>
+            <p className = "info-text">
+              **note: the feature to save your progress may not be available upon initial launch** 
+              </p>
+            <p className="info-text">
+              Once you've answered all 10 questions, you'll be able to see your results!
+            </p>
         </div>
 
+        <div className = "info-page-actions">
         <button className="info-page-button" onClick={() => dispatch({ type: "GO_HOME" })}>
           Go Home
         </button>
+
+        <button className="info-page-button"  onClick={() => dispatch({ type: "START_QUIZ" })}>
+          Start Quiz
+        </button>
+        </div>
+
       </div>
     </div>
   );
