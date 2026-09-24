@@ -70,6 +70,24 @@
   }
 }
 
+@font-face {
+  font-family: 'Kabel Demi';
+  src: url('./assets/font files/Kabel Demi/Kabel Demi Regular/Kabel Demi Regular.otf')
+    format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Kabel Demi', sans-serif;
+}
+
 #next-steps {
   display: flex;
   border-top: 1px solid var(--border);
@@ -184,7 +202,7 @@
 }
 
 .h2 {
-  
+  font-family: 'Kabel Demi', sans-serif;
 }
 
 .landing-actions{
@@ -216,15 +234,6 @@
   gap: 10px;
 }
 
-
-button.button {
-  background-color: white;
-  color: rgb(45, 107, 16);
-  padding: 10px 16px;
-  cursor: pointer;
-  margin: 0 8px;
-}
-
 .exit-button-wrap {
   margin-top: 8px;
 }
@@ -241,4 +250,54 @@ button.button {
   font-weight: 500;
   color: rgb(45, 107, 16);
   margin-bottom: 16px;
+}
+
+.info-text {
+  font-size: 18px;
+  color: rgb(45, 107, 16);
+  margin-left: 16px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.info-page {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-page-button {
+  background-color: white;
+  color: rgb(45, 107, 16);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  filter: drop-shadow(10px 10px rgb(45, 107, 16));
+  width: fit-content;
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.info-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 100%;
+  text-align: left;
+}
+
+.info-column {
+  text-align: left;
+}
+
+.info-column h2,
+.info-column p {
+  text-align: left;
+}
+
+.info-text {
+  max-width: 100%;
 }
