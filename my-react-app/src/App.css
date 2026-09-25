@@ -222,9 +222,13 @@ h1,
 }
 
 .landing-actions{
+  align-self: center;
   display: flex;
   gap: 16px;
   justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-top: -360px;
 }
 
 .button {
@@ -371,4 +375,38 @@ h1,
   width: 200px;
   height: auto;
   margin-bottom: 16px;
+}
+
+.star-cluster-image {
+  align-self: flex-start;
+  display: block;
+  width: 300px;
+  height: auto;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.star-image {
+  align-self: flex-end;
+  display: block;
+  width: 200px;
+  height: auto;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 3;
+  top: -200px;
+  margin-top: -100px;
+}
+
+.star-image-left {
+  align-self: flex-start;
+  display: block;
+  width: 300px;
+  height: auto;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 3;
+  top: -150px;
+  margin-top: -100px;
 }
